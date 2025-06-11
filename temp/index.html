@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <title>F1</title>
+</head>
+<body>
+    <div>
+        <div class="top">
+            <img src="{{url_for('static',filename='f1_logo.png')}}" class="logo">
+            <div class="headd">
+                <a href="{{url_for('calendar')}}"><h4 class="hh">Calendar</h4></a>
+                <a href="{{url_for('teams')}}"><h4 class="hh">Teams</h4></a>
+                <a href="{{url_for('drivers')}}"><h4 class="hh">Drivers</h4></a>
+            </div>
+        </div>
+        <div>
+            <h1 class="top_text">F1 Schedule 2025</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="top_race">
+            <img src="img/canada.png"class="ii">
+            <img src="img/aus.png" class="ii">
+            <img src="img/gb.png"class="ii">
+            <img src="img/bel.png" class="ii">
+            <img src="img/hun.png"class="ii">
+            <img src="img/net.png" class="ii">
+            <img src="img/italy.png"class="ii">
+            <img src="img/aze.png" class="ii">
+            <img src="img/sin.png"class="ii">
+            <img src="img/us2.png" class="ii">
+            <img src="img/mex.png"class="ii">
+            <img src="img/bra.png" class="ii">
+            <img src="img/us1.png"class="ii">
+            <img src="img/qat.png" class="ii">
+            <img src="img/abud.png"class="ii">
+        </div>
+
+        <div class="top_and_batton">
+            <img src="img/radB.png" class="bat">
+            <img src="img/Mclaran.png" class="bat">
+            <img src="img/far.png" class="bat">
+        </div>
+        <div class="batton">
+            <a href="{{url_for('teams')}}"><img src="img/blau.png" class="batt"></a>
+            <a href="{{url_for('drivers')}}"><img src="img/orang.png" class="batt"></a>
+            <a href="{{url_for('calendar')}}"><img src="img/red.png" class="batt" ></a>
+        </div>
+
+        <div style="padding: 0;">
+            <img src="img/bg1.png" class="bg">
+            <img src="img/bg2.png" class="bg">
+            <img src="img/bg3.png" class="bg">
+        </div>
+    </div>
+</body>
+</html>

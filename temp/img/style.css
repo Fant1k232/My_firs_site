@@ -1,0 +1,107 @@
+body{
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.top{
+    background-color: #F32A2A;
+    width: 100vw;
+    height: 105px;
+    display: inline-flex;
+}
+.logo{
+    width: 122px;
+    height: 99px;
+    padding-left: 20px;
+}
+.headd{
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+    display: inline-flex;
+    padding-left: 75%;
+}
+.hh{
+    padding-left: 26px;
+}
+.bg{
+    display: block;
+    margin: 0;
+    width: 100vw;
+}
+.top_text{
+    position: absolute;
+    color: white;
+    left: 1000px;
+    font-size: 90px;
+}
+.line{
+    position: absolute;
+    width: 720px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    left: 1000px;
+    top:270px;
+
+}
+.top_race{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 1000px;
+    top: 300px;
+}
+.ii{
+    padding-top: 25px;
+}
+.top_and_batton{
+    position: absolute;
+    top: 2600px;
+    left: 500px;
+}
+.bat{
+    padding-bottom: 15px;
+}
+.batton{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 2650px;
+    left: 1050px;
+}
+.batt{
+    padding-bottom: 120px;
+}
+.top_text2{
+    position: absolute;
+    color: white;
+    left: 200px;
+    font-size: 90px;
+}
+.line2{
+    position: absolute;
+    width: 360px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    left: 200px;
+    top:270px;
+
+}
+.last_name{
+    position: absolute;
+    padding-top: 400px;
+    padding-left: 115px;
+}
+.rb_info{
+    position: absolute;
+    padding-top: 250px;
+    padding-left: 200px;
+    font-size: 40px;
+    z-index: 3;
+}

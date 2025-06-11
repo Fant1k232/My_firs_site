@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <title>Calendar</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div class="top">
+                <img src="{{url_for('static',filename='f1_logo.png')}}" class="logo">
+                <div class="headd">
+                    <a href="{{url_for('index')}}" ><h4 class="hh" style="padding-left: 250px;">Home</h4></a>
+                </div>
+            </div>
+            <div>
+                <h1 class="top_text2">Calendar</h1>
+                <div class="line2"></div>
+            </div>
+            <div style="position: absolute; padding-top: 180px; display: flex; flex-direction: row; padding-left: 100px;">
+                <div style="display: flex; flex-direction: column; padding-left: 120px;">
+                    <img src="img/cal/au.png" style="padding-top: 26px;">
+                    <img src="img/cal/sau.png" style="padding-top: 26px;">
+                    <img src="img/cal/sp.png" style="padding-top: 26px;">
+                    <img src="img/cal/be.png" style="padding-top: 26px;">
+                    <img src="img/cal/az.png" style="padding-top: 26px;">
+                    <img src="img/cal/bra.png" style="padding-top: 26px;">
+                </div>
+                <div style="display: flex; flex-direction: column; padding-left: 120px;">
+                    <img src="img/cal/ch.png" style="padding-top: 26px;">
+                    <img src="img/cal/mi.png" style="padding-top: 26px;">
+                    <img src="img/cal/ca.png" style="padding-top: 26px;">
+                    <img src="img/cal/hu.png" style="padding-top: 26px;">
+                    <img src="img/cal/si.png" style="padding-top: 26px;">
+                    <img src="img/cal/la.png" style="padding-top: 26px;">
+                </div>
+                <div style="display: flex; flex-direction: column; padding-left: 120px;">
+                    <img src="img/cal/ja.png" style="padding-top: 26px;">
+                    <img src="img/cal/itt.png" style="padding-top: 26px;">
+                    <img src="img/cal/aus.png" style="padding-top: 26px;">
+                    <img src="img/cal/na.png" style="padding-top: 26px;">
+                    <img src="img/cal/as.png" style="padding-top: 26px;">
+                    <img src="img/cal/qa.png" style="padding-top: 26px;">
+                </div>
+                <div style="display: flex; flex-direction: column; padding-left: 120px;">
+                    <img src="img/cal/ba.png" style="padding-top: 26px;">
+                    <img src="img/cal/mo.png" style="padding-top: 26px;">
+                    <img src="img/cal/gr.png" style="padding-top: 26px;">
+                    <img src="img/cal/it.png" style="padding-top: 26px;">
+                    <img src="img/cal/me.png" style="padding-top: 26px;">
+                    <img src="img/cal/ab.png" style="padding-top: 26px;">
+                </div>
+            </div>
+            <div style="padding: 0;">
+                <img src="img/bg1.png" class="bg">
+                <img src="img/bg2.png" class="bg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

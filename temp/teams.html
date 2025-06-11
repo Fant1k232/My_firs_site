@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <title>Teams</title>
+</head>
+<body>
+    <div>
+    <div class="top">
+        <img src="{{url_for('static',filename='f1_logo.png')}}" class="logo">
+        <div class="headd">
+            <a href="{{url_for('index')}}" ><h4 class="hh" style="padding-left: 250px;">Home</h4></a>
+        </div>
+    </div>
+    <div>
+        <h1 class="top_text2">Teams</h1>
+        <div class="line2"></div>
+    </div>
+    <div style="padding-left: 200px;">
+        <div style="position: absolute; padding-top: 180px; display: flex; flex-direction: column; padding-left: 100px;">
+            <a href="{{url_for('team', teamname='Red_Bull_Racing')}}" style="z-index: 3;"><img src="img/redbull.png" style="padding-top: 86px;"></a>
+            <a href="{{url_for('team', teamname='Ferrari')}}" style="z-index: 3;"><img src="img/Ferrari.png" style="padding-top: 86px;"></a>
+            <a href="{{url_for('team', teamname='Alpine')}}" style="z-index: 3;"><img src="img/Alpine.png" style="padding-top: 86px;"></a>
+            <a href="{{url_for('team', teamname='Haas')}}" style="z-index: 3;"><img src="img/haas.png" style="padding-top: 86px;"></a>
+            <a href="{{url_for('team', teamname='Racing_Bulls')}}" style="z-index: 3;"><img src="img/raching.png" style="padding-top: 86px;"></a>
+        </div>
+        <div style="position: absolute; padding-top: 180px; display: flex; flex-direction: column; padding-left: 800px;">
+            <a href="{{url_for('team', teamname='McLaren')}}" style="z-index: 3;"><img src="img/McLaren.png" style="padding-top: 86px;"></a>
+            <a href="{{url_for('team', teamname='Mercedes')}}" style="z-index: 3;"><img src="img/Mercedes.png" style="padding-top: 86px;"></a>
+            <a href="{{url_for('team', teamname='Aston_Martine')}}" style="z-index: 3;"><img src="img/Aston.png" style="padding-top: 86px;"></a>
+            <a href="{{url_for('team', teamname='Williams')}}" style="z-index: 3;"><img src="img/willams.png" style="padding-top: 86px;"></a>
+            <a href="{{url_for('team', teamname='Kick_Sauder')}}" style="z-index: 3;"><img src="img/kiks.png" style="padding-top: 86px;"></a>
+        </div>
+    </div>
+    <div style="padding: 0;">
+        <img src="img/bg1.png" class="bg">
+        <img src="img/bg2.png" class="bg">
+    </div>
+</body>
+</html>

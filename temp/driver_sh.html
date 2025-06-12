@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <title>{{name}}</title>
+</head>
+<body>
+    <div>
+        <div class="top">
+            <img src="{{url_for('static',filename='f1_logo.png')}}" class="logo">
+            <div class="headd">
+                <a href="{{url_for('drivers')}}" ><h4 class="hh" style="padding-left: 250px;">Back</h4></a>
+            </div>
+        </div>
+        <div>
+            <h1 class="top_text3">{{name}}</h1>
+            <div class="line3"></div>
+        </div>
+        <div>
+            <div class="chracter">
+                <h2>Races:{{races}}</h2>
+                <h2 style="padding-left: 50px;">Wins:{{wins}}</h2>
+            </div>
+            <div>
+                <p class="bio_driver">{{bio}}</p>
+            </div>
+        </div>
+        <div style="padding: 0;">
+            <img src="{{bg}}" class="bg">
+        </div>
+    </div>
+</body>
+</html>

@@ -37,14 +37,6 @@ def get_bio_team(name_team):
     conn.close()
     return result
 
-def get_bg_team(name_team):
-    conn = sqlite3.connect("f1.db")
-    cursor = conn.cursor()
-    cursor.execute("SELECT bg FROM Teams WHERE name=?",(name_team,))
-    result = cursor.fetchall()
-    cursor.close()
-    return result
-
 def add_driver_info():
     conn = sqlite3.connect("f1.db")
     cursor = conn.cursor()
@@ -63,6 +55,32 @@ def add_driver_info():
     conn.commit()
 
 
+def get_bio_driver(name):
+    conn = sqlite3.connect("f1.db")
+    cursor = conn.cursor()
+    cursor.execute("SELECT bio FROM Driver WHERE name=?",(name,))
+    result = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    return result
+def get_races_driver(name):
+    conn = sqlite3.connect("f1.db")
+    cursor = conn.cursor()
+    cursor.execute("SELECT races FROM Driver WHERE name=?",(name,))
+    result = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    return result
+def get_wins_driver(name):
+    conn = sqlite3.connect("f1.db")
+    cursor = conn.cursor()
+    cursor.execute("SELECT wins FROM Driver WHERE name=?",(name,))
+    result = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    return result
+
+
 def show(table):
     query = "SELECT * FROM " + table
     conn = sqlite3.connect("f1.db")
@@ -76,6 +94,3 @@ def show_tables():
     show("Teams")
     show("Driver")
     show("Connect")
-
-
-print(show_tables())
